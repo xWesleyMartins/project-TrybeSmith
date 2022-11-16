@@ -10,4 +10,9 @@ export default class ProductController {
     const newProduct = await this.service.addProducts(name, amount);
     return res.status(201).json(newProduct);
   }
+
+  async findAll(req: Request, res: Response) {
+    const result = await this.service.findAll();
+    return res.status(200).json(result);
+  }
 }

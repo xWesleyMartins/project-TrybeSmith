@@ -8,4 +8,10 @@ export default class ProductService {
     const userId = await this.model.addProducts(name, amount);
     return userId;
   }
+
+  async findAll(): Promise<IProduct[]> {
+    const resultList = await this.model.findAll();
+    console.log(resultList);
+    return resultList;
+  }
 }
