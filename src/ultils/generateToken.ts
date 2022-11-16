@@ -1,7 +1,6 @@
 import * as jwt from 'jsonwebtoken';
 import IUser from '../interface/IUser';
 import UserModel from '../models/userModel';
-// import HttpException from '../shared/http.exception';
 
 export default class GenerateToken {
   userModel = new UserModel();
